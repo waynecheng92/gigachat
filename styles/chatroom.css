@@ -1,0 +1,66 @@
+/* General settings for the media object */
+.media {
+  display: flex;
+  width: 100%; /* Ensure media takes full width of the container */
+  border-top: none !important;
+  margin-top: 0px !important;
+}
+
+/* Style for own messages */
+.media.is-own {
+  justify-content: flex-end; /* Aligns own messages to the right */
+}
+
+/* Style for the message content */
+.content {
+  width: auto;
+  max-width: 50%; /* Limits the content width to 50% */
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.own-message {
+  position: relative;
+  background-color: #dbf3fa; /* Light blue background for own messages */
+  text-align: right;
+  margin-left: 50%; /* Pushes own messages to take up the right half */
+}
+
+/* Specific styles for other messages */
+.other-message {
+  background-color: #f4f4f4; /* Different color for other messages */
+  text-align: left;
+  margin-right: 50%; /* Makes other messages take up the left half */
+}
+
+.delete.is-small {
+  background-color: #fd6363;
+}
+
+.chatroom-background {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - 56px); /* Take up full viewport height */
+  background: linear-gradient(-135deg, #E938F8 0%, #5FD6DB 100%);
+  color: #fff;
+}
+
+.section {
+  max-width: 1000px;
+  width: 90%;
+}
+
+.edit-text {
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.button.is-small {
+  height: 20px;
+}

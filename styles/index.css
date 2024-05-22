@@ -1,0 +1,34 @@
+.hero.is-primary {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-135deg, #E938F8 0%, #5FD6DB 100%);
+  color: #fff;
+}
+
+.hero.is-primary::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -350px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  border-radius: 20px;
+}
+
+.hero.is-primary::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust based on design preference */
+  right: -300px; /* Adjust based on design preference */
+  width: 400px; /* Size of the square */
+  height: 500px; /* Size of the square */
+  background-color: rgba(0, 0, 0, 0.07); /* White square with more transparency */
+  transform: rotate(-30deg); /* Rotates the square in the opposite direction */
+  border-radius: 20px;
+}
+
+.button.is-info.is-large.mt-5.enter {
+  background-color: black;
+}
